@@ -44,3 +44,15 @@ function MultiplicationTable(m, n, range = 10) {
 }
 
 MultiplicationTable(2, 4, 20);
+
+//array of objects
+const people = [
+    { name: 'Sristi', dob: '1234', isFemale: true },
+    { name: 'Sristi2', dob: '1234', isFemale: true }
+];
+console.table(people);
+
+//node js specific command
+process.stdout.write("Hi");
+process.stdout.write("Hi");
+process.stdout.write("Hi");
