@@ -52,7 +52,7 @@ function StringLength(length) {
 
 
 
-//Find sd of set of numbers
+////Find sd of set of numbers
 
 let GetSd = (numbers) => {
     let sum = 0;
