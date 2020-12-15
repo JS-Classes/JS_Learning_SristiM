@@ -77,3 +77,25 @@ function getAge(dateString) {
 
 
 console.log(getAge('01/01/2020'));
+
+
+// Find age of the person like: X years Y months Z days
+
+let calculateAge = (dob) => {
+    let dobDate = new Date(dob);
+    let now = new Date();
+
+    let ageInMs = now - dobDate;
+    let ageInDays = ageInMs / (1000 * 60 * 60 * 24);
+
+    let ageInYears = Math.floor(ageInDays / 365.25);
+    let remainingDays = ageInDays % 365.25;
+
+    let ageInMonths = Math.floor(remainingDays / 30);
+    let remainingMonths = Math.floor(remainingDays % 30);
+
+    return `${ageInYears} Years,${remainingMonths} Months and ${remainingDays} Days`;
+};
+
+console.log(calculateAge('01/01/2020'));
+console.log(calculateAge("1992-02-03"));
